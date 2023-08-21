@@ -6,6 +6,7 @@ export interface Game {
     slug: string;
     description: string;
     rating: number;
+    background_image: string;
 }
 
 export interface FetechGamesResponse {
