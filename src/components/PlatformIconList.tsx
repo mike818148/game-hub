@@ -36,7 +36,13 @@ const PlatformIconList = ({ platforms }: Props) => {
     <>
       <HStack marginY={1}>
         {platforms.map((platform) => {
-          return <Icon as={iconMap[platform.slug]} color="gray.500" />;
+          return (
+            <Icon
+              key={platform.id}
+              as={iconMap[platform.slug]}
+              color="gray.500"
+            />
+          );
         })}
       </HStack>
     </>
